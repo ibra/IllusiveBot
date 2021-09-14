@@ -15,7 +15,17 @@ Then run:
 ```
 npm install
 ```
-And finally create a local instance of the bot.:
+Then rename `config.example.json` to `config,json` and fill in the fields that are not filled in.
+```json
+{
+    "BotToken": "Your Discord Bot token here", 
+    "IllusiveToken": "Your Illusive API token here",   
+    "Prefix":"ill!",
+    "SuccessColor": "#C0C0C0",
+    "FailureColor": "#FF0000"
+}
+```
+And finally create a local instance of the bot:
 ```
 node .
 ```
