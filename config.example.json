@@ -1,0 +1,7 @@
+{
+    "BotToken": "Your Discord Bot token here", 
+    "IllusiveToken": "Your Illusive API token here",   
+    "Prefix":"ill!",
+    "SuccessColor": "#C0C0C0",
+    "FailureColor": "#FF0000"
+}

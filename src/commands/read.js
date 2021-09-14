@@ -8,7 +8,7 @@ module.exports = {
   aliases: ["get"],
   usage: "None given",
 
-  execute: async function (message, args) {
+  execute: async function (client, message, args) {
     //Remove prefix.
     const idLookup = args.join(" ");
     //Create new embed.

@@ -1,7 +1,7 @@
 //Discord Initialization
 const Discord = require("discord.js");
 const { readdirSync } = require("fs");
-const { BotToken, PREFIX, SuccessColor } = require("../config.json");
+const { BotToken, Prefix, SuccessColor } = require("../config.json");
 
 // Creating a new bot client that we login with
 const client = new Discord.Client();
@@ -26,14 +26,14 @@ client.on("message", async (message) => {
   }
   //Checking if message starts with prefix, the message was sent by a bot or if the message was in a direct message. If so, returning.
   if (
-    !message.content.startsWith(PREFIX) ||
+    !message.content.startsWith(Prefix) ||
     message.author.bot ||
     message.channel.type === "dm"
   )
     return;
 
   //String Manipulation to remove the prefix and lowercasing all arguments so they are not case-senstitive
-  const args = message.content.slice(PREFIX.length).split(/ +/);
+  const args = message.content.slice(Prefix.length).split(/ +/);
   const command = args.shift().toLowerCase();
   // fullCmd includes the command AS WELL AS its aliases
   const fullCmd =

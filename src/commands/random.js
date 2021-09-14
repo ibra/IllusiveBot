@@ -8,7 +8,7 @@ module.exports = {
   aliases: ["rand"],
   usage: "None given",
 
-  execute: async function (message) {
+  execute: async function (client, message, args) {
     //Create new embed.
     const randomEmbed = new Discord.MessageEmbed();
     const requestURL = "https://forum.ruffles.pw/api/v1/forum/getrandom";

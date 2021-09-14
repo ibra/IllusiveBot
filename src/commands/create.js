@@ -8,7 +8,7 @@ module.exports = {
   aliases: ["new,post"],
   usage: "Create a new post on illusive",
 
-  execute: async function (message) {
+  execute: async function (client, message, args) {
     var title;
     var content;
 
